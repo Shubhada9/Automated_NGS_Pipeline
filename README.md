@@ -2,7 +2,7 @@
 
 A streamlined Nextflow-based solution for identifying genetic variants from paired-end sequencing reads through quality control, alignment, and variant discovery.
 
-## Pipeline Workflow
+## Pipeline Workflow and Structure
 
 ```text
 Input FASTQ files 
@@ -23,11 +23,10 @@ VARIANT_CALLING
         ↓
 FILTER_VARIANTS 
         ↓
-Final VCF files 
-```
+Final VCF files
 
-## Project Structure
----text
+---
+
 Automated_NGS_Pipeline/
 ├── main.nf                 # Pipeline entry point
 ├── nextflow.config         # Global configuration & parameters
@@ -40,7 +39,10 @@ Automated_NGS_Pipeline/
 │   └── ... (other modules)
 └── workflows/              # Integrated workflow logic
     └── ngs_workflow.nf
-    ---
+```
+
+## Project Structure
+
     
 
 ## Overview
@@ -81,3 +83,4 @@ Sequencing instruments produce raw data that contains errors and technical artif
 - Distinguishing true genetic variations from sequencing errors
 
 - Delivering ready-to-analyze variant files for research applications
+
