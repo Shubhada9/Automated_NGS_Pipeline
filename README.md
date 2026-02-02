@@ -28,16 +28,16 @@ Final VCF files
 ---
 
 Automated_NGS_Pipeline/
-├── main.nf                 # Pipeline entry point
-├── nextflow.config         # Global configuration & parameters
-├── env.yml                 # Conda environment dependencies
-├── docs/                   # Documentation & Workflow Diagrams
-├── modules/                # Atomic process definitions (DSL2)
+├── main.nf                 
+├── nextflow.config        
+├── env.yml                
+├── docs/                   
+├── modules/                
 │   ├── FASTQC_RAW.nf
 │   ├── CUTADAPT.nf
 │   ├── BWA_ALIGN.nf
 │   └── ... (other modules)
-└── workflows/              # Integrated workflow logic
+└── workflows/             
     └── ngs_workflow.nf
 ```
 
@@ -83,4 +83,5 @@ Sequencing instruments produce raw data that contains errors and technical artif
 - Distinguishing true genetic variations from sequencing errors
 
 - Delivering ready-to-analyze variant files for research applications
+
 
