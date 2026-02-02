@@ -4,3 +4,4 @@ results/
 .nextflow.log*
 data/*.fastq.gz
 data/*.fasta
+data/*.fai
