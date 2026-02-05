@@ -1,4 +1,4 @@
-# Nextflow Pipeline: FastQC and Cutadapt
+# Automated_NGS_Pipeline
 
 ## Overview
 This repository contains a modular **Nextflow DSL2 pipeline** developed for basic NGS data quality control and preprocessing.
@@ -60,4 +60,5 @@ nextflow run main.nf
 - `conda env create -f environment.yml` → Creates the Conda environment with required tools  
 - `conda activate nextflow-qc` → Activates the environment  
 - `nextflow run main.nf` → Executes the Nextflow pipeline
+
 
