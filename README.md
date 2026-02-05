@@ -30,6 +30,23 @@ nextflow_pipeline/
 ├── results/
 └── .gitignore
 ```
+## Key Features
+
+* **End-to-end automation** from raw reads to filtered variants
+* **Multi-sample support** with parallel execution
+* **Quality metrics** generated at each step
+* **Standardized output formats** (BAM, VCF)
+* **Cross-platform compatibility**
+* **Environment management** via Conda
+
+## Purpose
+
+Sequencing instruments produce raw data that contains errors and technical artifacts. This pipeline addresses these challenges by:
+- Identifying and removing low-quality sequences
+- Accurately mapping reads to their genomic origins
+- Distinguishing true genetic variations from sequencing errors
+- Delivering ready-to-analyze variant files for research applications
+  
 ## How to Run the Pipeline
 
 ```
@@ -43,3 +60,4 @@ nextflow run main.nf
 - `conda env create -f environment.yml` → Creates the Conda environment with required tools  
 - `conda activate nextflow-qc` → Activates the environment  
 - `nextflow run main.nf` → Executes the Nextflow pipeline
+
