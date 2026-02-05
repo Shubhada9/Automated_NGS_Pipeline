@@ -1,10 +1,10 @@
-include { FASTQC_RAW } from '../modules/FASTQC_RAW'
-include { CUTADAPT } from '../modules/CUTADAPT'
-include { BWA_INDEX } from '../modules/BWA_INDEX'
-include { FASTA_INDEX } from '../modules/FASTA_INDEX' // Add this
-include { BWA_ALIGN } from '../modules/BWA_ALIGN'
-include { SAM_TO_BAM } from '../modules/SAM_TO_BAM'
-include { SORT_BAM } from '../modules/SORT_BAM'
+include { FASTQC_RAW } from '../modules/fastqc_raw'
+include { CUTADAPT } from '../modules/cutadapt'
+include { BWA_INDEX } from '../modules/bwa_index'
+include { FASTA_INDEX } from '../modules/fasta_index' // Add this
+include { BWA_ALIGN } from '../modules/bwa_align'
+include { SAM_TO_BAM } from '../modules/sam_to_bam'
+include { SORT_BAM } from '../modules/sort_bam'
 include { VARIANT_CALLING; FILTER_VARIANTS } from '../modules/variant_discovery'
 
 workflow NGS_PIPELINE {
