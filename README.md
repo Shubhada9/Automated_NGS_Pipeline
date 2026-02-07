@@ -14,21 +14,29 @@ This project was created as part of an academic assignment to demonstrate workfl
 
 
 
-## Project Structure
+## Pipeline Workflow
 
-```
-nextflow_pipeline/
-├── main.nf
-├── nextflow.config
-├── workflows/
-│   └── workflow.nf
-├── modules/
-│   ├── fastqc.nf
-│   └── cutadapt.nf
-├── data/
-│   └── *.fastq.gz
-├── results/
-└── .gitignore
+```text
+Input FASTQ files 
+        ↓
+   FASTQC_RAW 
+        ↓
+    CUTADAPT 
+        ↓
+  FASTQC_TRIM 
+        ↓
+   BWA_ALIGN
+        ↓
+  SAM_TO_BAM 
+        ↓
+   SORT_BAM 
+        ↓
+VARIANT_CALLING 
+        ↓
+FILTER_VARIANTS 
+        ↓
+Final VCF files 
+```tignore
 ```
 ## Key Features
 
@@ -60,5 +68,6 @@ nextflow run main.nf
 - `conda env create -f environment.yml` → Creates the Conda environment with required tools  
 - `conda activate nextflow-qc` → Activates the environment  
 - `nextflow run main.nf` → Executes the Nextflow pipeline
+
 
 
