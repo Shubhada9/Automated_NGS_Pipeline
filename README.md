@@ -11,7 +11,10 @@ The pipeline performs:
 This project was created as part of an academic assignment to demonstrate workflow automation, modular pipeline design, and reproducible bioinformatics analysis using Nextflow.
 
 ---
-
+### 1. Clone the Repository
+```bash
+https://github.com/Shubhada9/Automated_NGS_Pipeline.git
+```
 ## Directory Structure
 
 ```text
@@ -62,6 +65,7 @@ nextflow run main.nf
 - `conda env create -f environment.yml` → Creates the Conda environment with required tools  
 - `conda activate nextflow-qc` → Activates the environment  
 - `nextflow run main.nf` → Executes the Nextflow pipeline
+
 
 
 
