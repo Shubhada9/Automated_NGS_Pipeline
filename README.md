@@ -13,7 +13,7 @@ This project was created as part of an academic assignment to demonstrate workfl
 ---
 ### 1. Clone the Repository
 ```bash
-https://github.com/Shubhada9/Automated_NGS_Pipeline.git
+git clone https://github.com/Shubhada9/Automated_NGS_Pipeline.git
 ```
 ## Directory Structure
 
@@ -65,6 +65,7 @@ nextflow run main.nf
 - `conda env create -f environment.yml` → Creates the Conda environment with required tools  
 - `conda activate nextflow-qc` → Activates the environment  
 - `nextflow run main.nf` → Executes the Nextflow pipeline
+
 
 
 
