@@ -12,31 +12,25 @@ This project was created as part of an academic assignment to demonstrate workfl
 
 ---
 
-
-
-## Pipeline Workflow
+## Directory Structure
 
 ```text
-Input FASTQ files 
-        ↓
-   FASTQC_RAW 
-        ↓
-    CUTADAPT 
-        ↓
-  FASTQC_TRIM 
-        ↓
-   BWA_ALIGN
-        ↓
-  SAM_TO_BAM 
-        ↓
-   SORT_BAM 
-        ↓
-VARIANT_CALLING 
-        ↓
-FILTER_VARIANTS 
-        ↓
-Final VCF files 
-```tignore
+Automated_NGS_Pipeline/
+├── modules/                    # Nextflow module files
+│   ├── fastqc_raw.nf          # Raw read QC
+│   ├── cutadapt.nf            # Adapter trimming
+│   ├── fasta_index.nf         # Reference indexing
+│   ├── bwa_index.nf           # BWA index creation
+│   ├── bwa_align.nf           # Read alignment
+│   ├── sam_to_bam.nf          # Format conversion
+│   ├── sort_bam.nf            # BAM sorting
+│   └── variant_discovery.nf   # Variant calling
+├── workflows/                  # Workflow definitions
+├── main.nf                     # Main pipeline script
+├── nextflow.config             # Pipeline configuration
+├── env.yml                     # Conda environment
+├── README.md                   # Documentation
+└── .gitignore                 # Git ignore rules
 ```
 ## Key Features
 
@@ -68,6 +62,7 @@ nextflow run main.nf
 - `conda env create -f environment.yml` → Creates the Conda environment with required tools  
 - `conda activate nextflow-qc` → Activates the environment  
 - `nextflow run main.nf` → Executes the Nextflow pipeline
+
 
 
 
